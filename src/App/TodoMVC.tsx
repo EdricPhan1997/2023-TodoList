@@ -4,6 +4,7 @@ import { useRecoilValue } from "recoil";
 import type { AppState } from "../dataStructure";
 import { recoilState, LocalStorageKey } from "../dataStructure";
 import NewTodoTextInput from "./NewTodoInput";
+import TodoList from "./TodoList";
 
 import { Layout } from "./style";
 
@@ -24,7 +25,7 @@ const TodoMVC = () => {
         <NewTodoTextInput />
         {appState.todoList.length ? (
           <>
-            <div>hieu</div>
+            <TodoList />
           </>
         ) : null}
       </section>
