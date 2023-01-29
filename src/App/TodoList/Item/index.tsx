@@ -90,6 +90,8 @@ const Item: React.FC<Props> = ({ todo }) => {
     }
   }, [editInput, state.onEdit]);
 
+  console.log("editInput", editInput);
+
   return (
     <Layout data-cy="todo-item">
       <li className={SwitchStyle(todo, state.onEdit)} data-testid="todo-item">

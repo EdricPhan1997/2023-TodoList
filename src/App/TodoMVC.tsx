@@ -5,6 +5,7 @@ import type { AppState } from "../dataStructure";
 import { recoilState, LocalStorageKey } from "../dataStructure";
 import NewTodoTextInput from "./NewTodoInput";
 import TodoList from "./TodoList";
+import UnderBar from "./UnderBar";
 
 import { Layout } from "./style";
 
@@ -26,6 +27,7 @@ const TodoMVC = () => {
         {appState.todoList.length ? (
           <>
             <TodoList />
+            <UnderBar />
           </>
         ) : null}
       </section>
